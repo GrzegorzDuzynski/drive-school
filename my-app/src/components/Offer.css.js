@@ -4,15 +4,13 @@ import { Link } from "react-router-dom";
 
 export const StyledContainer = styled.div`
   min-height: 100vh;
-  padding: 70px 30px;
+  padding: 30px 30px;
   align-items: center;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 20px;
-  grid-auto-rows: auto;
+  background-color: ${({ theme }) => theme.sixColor};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media ${device.tablet} {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 10px;
   }
 `;
@@ -20,12 +18,14 @@ export const StyledContainer = styled.div`
 export const StyledBox = styled.div`
   padding: 10px 50px;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 `;
 
 
 export const StyledCard = styled.div`
-  width: 300px;
+
   position: relative;
   border-radius: 10px;
   box-shadow: 5px 5px 10px 5px rgb(154, 151, 151);
@@ -45,7 +45,6 @@ export const StyledCard = styled.div`
 
   @media ${device.tablet} {
     width: 200px;
-    height: 300px;
     padding: 10px;
     gap: 10px;
     /* &:hover {
@@ -63,35 +62,35 @@ export const StyledBoxTop = styled.div`
   }
 `;
 export const StyledBoxImg = styled.div`
-  height: 300px;
-  width: 270px;
+  height: 500px;
+  width: 400px;
   @media ${device.tablet} {
     width: 180px;
     height: 180px;
   }
 `;
 
-export const StyledBoxPopup = styled.div`
-  margin: 0 auto;
-  padding: 20px;
+// export const StyledBoxPopup = styled.div`
+//   margin: 0 auto;
+//   padding: 20px;
 
-  display: flex;
-  gap: 20px;
-  @media ${device.tablet} {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-`;
+//   display: flex;
+//   gap: 20px;
+//   @media ${device.tablet} {
+//     flex-direction: column;
+//     align-items: center;
+//     padding: 10px;
+//   }
+// `;
 
-export const StyledBoxImgPopup = styled.div`
-  height: 350px;
-  width: 300px;
-  @media ${device.tablet} {
-    width: 240px;
-    height: 240px;
-  }
-`;
+// export const StyledBoxImgPopup = styled.div`
+//   height: 500px;
+//   width: 500px;
+//   @media ${device.tablet} {
+//     width: 240px;
+//     height: 240px;
+//   }
+// `;
 
 export const StyledBoxTextPopup = styled.div`
   width: 600px;

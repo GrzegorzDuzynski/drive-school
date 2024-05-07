@@ -1,5 +1,5 @@
 export const theme = {
-  zeroColor: "rgb(107, 101, 101)",
+  zeroColor: "rgba(43,42,41,255)",
   firstColor: "gray",
   secondColor: "white",
   thirdColor: "orange",

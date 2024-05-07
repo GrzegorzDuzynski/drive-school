@@ -1,4 +1,4 @@
-export const data = [
+export const dataOld = [
     {
       id: 1,
       text: "zdjecie 1",
@@ -24,6 +24,45 @@ export const data = [
       text: "zdjecie 5",
       img: "https://img.freepik.com/premium-zdjecie/samochody-na-sprzedaz-lub-wynajem-w-fabrycznym-magazynie-dealera-samochodow-ai-generated_145713-14508.jpg?w=1060",
     },
+
+  ];
+
+  export const data = [
+    // {
+    //   id: 0,
+    //   text: "zdjecie 0",
+    //   img: "0.jpg",
+    // },
+    {
+      id: 2,
+      text: "zdjecie 2",
+      img: "2.jpg",
+    },
+    {
+      id: 3,
+      text: "zdjecie 3",
+      img: "3.jpg",
+    },
+    // {
+    //   id: 4,
+    //   text: "zdjecie 4",
+    //   img: "4.jpg",
+    // },
+    {
+      id: 5,
+      text: "zdjecie 5",
+      img: "5.jpg",
+    },
+    {
+      id: 6,
+      text: "zdjecie 6",
+      img: "6.jpg",
+    },
+    // {
+    //   id: 7,
+    //   text: "zdjecie 7",
+    //   img: "7.png",
+    // },
 
   ];
 

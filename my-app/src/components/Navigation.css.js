@@ -14,8 +14,8 @@ export const StyledContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media ${device.tablet} {
-    padding: 10px 20px;
+  @media ${device.mobileL} {
+    padding: 10px 15px;
   }
 `;
 
@@ -42,11 +42,15 @@ export const StyledBoxCompany = styled.div`
 `;
 
 export const StyledBoxLogo = styled.div`
-  height: 150px;
-  width: 150px;
+  width: 160px;
+  padding: 25px 0 25px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media ${device.mobileL} {
+    width: 110px;
+    padding: 10px 0 10px 0;
+  }
 `;
 export const StyledListItem = styled.li`
   color: gray;
@@ -98,22 +102,22 @@ export const StyledBoxContact = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 `;
 
 export const StyledTitleTel = styled.h1`
   font-size: 20px;
-  color: black;
-  /* color: ${({ theme }) => theme.firstColor}; */
+  /* color: black; */
+  color: ${({ theme }) => theme.zeroColor}; 
   @media ${device.tabletL} {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 
 export const StyledText = styled.p`
   font-size: 14px;
   color: white;
-  /* color: ${({ theme }) => theme.firstColor}; */
+  /* color: ${({ theme }) => theme.zeroColor}; */
   @media ${device.tablet} {
     font-size: 9px;
   }

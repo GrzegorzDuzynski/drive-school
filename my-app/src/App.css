@@ -15,16 +15,30 @@
   }
 }
 
+.icon-phone {
+  font-size: 20px;
+  color: rgba(43,42,41,255);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  &:hover {
+    scale: 1.1;
+  }
+}
+
 .icon-menu {
-  font-size: 30px;
-  color: black;
+  font-size: 25px;
+  color: rgba(43,42,41,255);
   transition: 0.3s ease-in;
   cursor: pointer;
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .icon-menu {
     display: block;
+  }
+
+  .icon-phone {
+    font-size: 16px;
   }
 }

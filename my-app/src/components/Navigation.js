@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faPhone } from "@fortawesome/free-solid-svg-icons";
-import logo from "../WSJ_transparent2.png";
+import logo from "../PNG.png";
 
 import {
   StyledBoxCompany,
@@ -69,7 +69,7 @@ const Navigation = () => {
         <StyledBox>
           <a href="tel:+48502204423">
              <StyledBoxContact>
-              <FontAwesomeIcon className="icon" icon={faPhone} />
+              <FontAwesomeIcon className="icon-phone" icon={faPhone} />
               <div style={{ display: "flex", flexDirection: "column" }}>
                 <StyledTitleTel>502&nbsp;204&nbsp;423</StyledTitleTel>
               </div>

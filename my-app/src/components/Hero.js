@@ -29,7 +29,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", backgroundColor:"red" }}
+      style={{ ...style, right:20, display: "block" }}
       onClick={onClick}
     />
   );
@@ -40,14 +40,13 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block" }}
+      style={{ ...style, zIndex:6,  left:20, display: "block"}}
       onClick={onClick}
     />
   );
 }
 
 const Hero = () => {
-  console.log(data)
   let settings = {
     dots: true,
     centerPadding: "60px",
@@ -68,6 +67,16 @@ const Hero = () => {
         `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
       );
     },
+    appendDots: dots => (
+      <div
+        style={{
+          borderRadius: "10px",
+          padding: "10px"
+        }}
+      >
+        <ul style={{ margin: "20px" }}> {dots} </ul>
+      </div>
+    ),
     // responsive: [
     //   {
     //     breakpoint: 1024,
@@ -97,7 +106,7 @@ const Hero = () => {
   };
   return (
     // <StyledHeaderContainer id="hero">
-    <div style={{position:"relative", marginBottom: "70px"}}>
+    <div style={{position:"relative", margin: "104px 0 70px 0", backgroundColor:"white"}}>
        <Slider {...settings}>
           {data.map((img, id) => (
                   <StyledBoxImg key={img.id}>
@@ -115,16 +124,16 @@ const Hero = () => {
             Wyższa szkoła jazdy
           </StyledHeaderTitle>
           <StyledText>
-            Doskonała jakość nauki dostosowana do Twoich potrzeb.
+            Szybko, skutecznie i bezstresowo
           </StyledText>
         </StyledBox>
       </StyledBoxLogoAndTitle>
       <StyledLink smooth to="/#offer">
         <StyledBoxAngleText>
-          <StyledText>zobacz więcej</StyledText>
+          <StyledText style={{color:"gray"}}>zobacz więcej</StyledText>
         </StyledBoxAngleText>
         <StyledBoxAngleIcon>
-          <StyledText>
+          <StyledText style={{color:"gray"}}>
             <FontAwesomeIcon icon={faAnglesDown} />
           </StyledText>
         </StyledBoxAngleIcon>

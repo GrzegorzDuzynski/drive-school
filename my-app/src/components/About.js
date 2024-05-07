@@ -16,7 +16,7 @@ const About = () => {
   return (
     <StyledAboutContainer id="about">
       <StyledImgBox>
-        <img src="https://img.freepik.com/darmowe-zdjecie/mezczyzna-w-zielonej-koszuli-o-rekami-skrzyzowanymi_23-2148401380.jpg?t=st=1715000053~exp=1715003653~hmac=0e227751360ffeabcf69d1119821fa0b35abc63620dc58cc1f756ff389c0e0d2&w=360" alt="abcd" />
+        <img src="1.jpg" alt="abcd" />
       </StyledImgBox>
       <StyledBox>
         <StyledTitle>

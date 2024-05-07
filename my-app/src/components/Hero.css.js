@@ -4,10 +4,11 @@ import { device } from "../breakpoints";
 
 
 export const StyledHeaderContainer = styled.div`
+  background-color: white;
   height: 80vh;
   position: relative;
   padding: 30px;
-
+  margin-top: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +33,7 @@ export const StyledBoxAngleIcon = styled.div`
 
   position: absolute;
   left: 50%;
-  bottom: 10px;
+  bottom: -60px;
   transform: translateX(-50%);
 `;
 
@@ -50,10 +51,12 @@ export const StyledBox = styled.div`
   overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   transition: height 0.3s;
+  backdrop-filter: blur(20px) brightness(0.7);
 
   display: flex;
   flex-direction: column;
   gap: 10px;
+
 `;
 
 export const StyledBoxDiv = styled.div`
@@ -76,7 +79,7 @@ export const StyledBoxAngleText = styled.div`
   position: absolute;
 
   left: 50%;
-  bottom: 30px;
+  bottom: -30px;
   transform: translateX(-50%);
 `;
 
@@ -88,7 +91,7 @@ export const StyledHeaderTitle = styled.h1`
     color: ${({ theme }) => theme.thirdColor};
   }
   @media ${device.tablet} {
-    font-size: 30px;
+    font-size: 20px;
   }
 `;
 
