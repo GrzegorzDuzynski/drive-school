@@ -28,7 +28,6 @@ export const StyledBoxSlider = styled.div`
 
 export const StyledBoxAngleIcon = styled.div`
   cursor: pointer;
-
   position: absolute;
   left: 50%;
   bottom: -60px;
@@ -67,8 +66,8 @@ export const StyledBoxImg = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
   border: 2px solid #ddd;
   overflow: hidden;
 `;
