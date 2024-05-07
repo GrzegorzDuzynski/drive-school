@@ -107,7 +107,7 @@ const Reputation = () => {
   };
   return (
     <StyledContainer id="reputation">
-      <StyledBigTitle>Co mówią moi klienci?</StyledBigTitle>
+      <StyledBigTitle>Co mówią moi kursanci?</StyledBigTitle>
       {opinionsObj && (
         <Slider {...settings}>
           {opinionsObj.map((opinion, id) => (

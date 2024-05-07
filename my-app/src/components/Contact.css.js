@@ -65,7 +65,7 @@ export const StyledBoxRight = styled.div`
 `;
 export const StyledBoxBlurr = styled.div`
   width: 450px;
-  backdrop-filter: blur(6px) brightness(80%) ;
+  backdrop-filter: blur(6px) brightness(60%) ;
   display: flex;
   justify-content: center;
   align-items: center;
