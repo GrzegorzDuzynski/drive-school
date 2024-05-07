@@ -69,19 +69,88 @@ export const dataOld = [
   export const opinions = [
     {
       id: 1,
-      text: "najlepszy nauczyciel ever!",
-      author: "Adam",
+      text: "Odpowiednia osoba na odpowednim mijescu. Świetny instruktor, przekazał ogrmoną dawkę wiedzy teoretycznej jak i praktycznej.Na jazdach towarzyszyła zawsze miła i luźna otmosfera. Polecam!",
+      author: "andziusia",
     },
     {
       id: 2,
-      text: "Zawsze mona sie przyczepić ale nie do .......",
-      author: "Gosia",
+      text: "Miałam przyjemność uczyć się z Piotrkiem już 5 lat temu i uważam, że jest ekstra instruktorem jazdy, polecam każdemu! ",
+      author: "Izabela",
     },
     {
-      id: 2,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eius!",
-      author: "Gosia",
+      id: 3,
+      text: "Przygotowanie przez instruktora Pana Piotrka B do egzaminu wybitne. Zdecydowanie polecam",
+      author: "Konrad",
     },
+    {
+      id: 4,
+      text: "Wszystko super! Świetna atmosfera i wspaniały instruktor - Piotr Biernat, z którym nauka jazdy to czysta przyjemność. Bardzo polecam.",
+      author: "Natalia ",
+    },
+    {
+      id: 5,
+      text: "Świetny instruktor Piotr, wszystko poszło sprawnie tak sami jak egzamin.",
+      author: "Patrycja",
+    },
+    {
+      id: 6,
+      text: "Piotrek jest najlepszym instruktorem w mieście. Spokój, cierpliwość, zaangażowanie, ogrmona ilość wiedzy i doświadczenie to własnie cechuje Piotrka.",
+      author: "Wiktoria",
+    },
+    {
+      id: 7,
+      text: "Serdecznie polecam!!! Jeździłam z panem Piotrem, gdzie zawsze była luźna i przyjemna atmosfera.",
+      author: "Kinga",
+    },
+    {
+      id: 8,
+      text: "Zdany egzamin za pierwszym razem. Najlepszy instruktor Piotr B. Nauczy, wytłumaczy na spokojnie i bez stresu",
+      author: "Szczepan",
+    },
+    {
+      id: 9,
+      text: "Polecam z całego serca. Zdane za 1 razem ucząc sie u instruktora Piotrka",
+      author: "Piotrek",
+    },
+    {
+      id: 10,
+      text: "Jeździłam z instruktorem Piotrkiem - pełen profesjonalizm, wielkie doświadczenie i cierpliwość.Kada godzina jazdy pozwalała mi nauczyć się czegoś nowego",
+      author: "Magdalena",
+    },
+    {
+      id: 11,
+      text: "Świetne przygotowanie do egzaminu, bezproblemowa komunikacja z instrukotrem Piotrkiem - ogromne doświadczenie z jego strony. Polecam :)",
+      author: "Bartosz",
+    },
+    {
+      id: 12,
+      text: "Bardzo polecam instruktora Piotrka. Zdane za 1-szym",
+      author: "Maciej",
+    },
+    
+    
   ]
+
+  export const offer = [
+    {
+      id: 1,
+      text: "Kurs prawa jazdy Kat.B: 30 godzin jazd",
+      price: 2650,
+      img: "8.jpg",
+    },
+    {
+      id: 2,
+      text: "Kurs prawa jazdy Kat.B: 40 godzin jazd",
+      price:3450,
+      img: "9.jpg",
+    },
+    {
+      id: 3,
+      text: "Godzina jazdy doszkalającej",
+      price:100,
+      img: "3.jpg",
+    },
+
+  ];
   
   

@@ -4,13 +4,15 @@ import { Link } from "react-router-dom";
 
 export const StyledContainer = styled.div`
   min-height: 100vh;
-  padding: 30px 30px;
+  padding: 100px 30px 50px 30px;
   align-items: center;
   background-color: ${({ theme }) => theme.sixColor};
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  grid-auto-rows: auto;
   @media ${device.tablet} {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 10px;
   }
 `;
@@ -21,11 +23,14 @@ export const StyledBox = styled.div`
   justify-content: center;
   align-items: center;
   gap: 40px;
+  @media ${device.tablet} {
+    gap:20px
+  }
 `;
 
 
 export const StyledCard = styled.div`
-
+  width:320px;
   position: relative;
   border-radius: 10px;
   box-shadow: 5px 5px 10px 5px rgb(154, 151, 151);
@@ -36,6 +41,8 @@ export const StyledCard = styled.div`
   /* z-index: 1; */
 
   display: flex;
+  justify-content:center;
+  align-items:center;
   flex-direction: column;
   gap: 20px;
 
@@ -62,8 +69,8 @@ export const StyledBoxTop = styled.div`
   }
 `;
 export const StyledBoxImg = styled.div`
-  height: 500px;
-  width: 400px;
+  height: 300px;
+  width: 280px;
   @media ${device.tablet} {
     width: 180px;
     height: 180px;
@@ -119,12 +126,12 @@ export const StyledBoxBottom = styled.div`
 
 export const StyledTitle = styled.h1`
   color: ${({ theme }) => theme.zeroColor};
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: 2px;
   text-align: center;
   @media ${device.tablet} {
-    font-size: 14px;
+    font-size: 12px;
   }
 `;
 

@@ -3,15 +3,13 @@ import { HashLink as Link } from "react-router-hash-link";
 import { device } from "../breakpoints";
 
 
-export const StyledHeaderContainer = styled.div`
-  background-color: white;
-  height: 80vh;
-  position: relative;
-  padding: 30px;
-  margin-top: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+export const StyledHeroContainer = styled.div`
+position:relative;
+margin: 104px 0 70px 0;
+ background-color: white;
+ @media ${device.tabletL} {
+  margin: 70px 0 70px 0;
+}
 `;
 
 export const StyledBoxSlider = styled.div`
@@ -23,7 +21,7 @@ export const StyledBoxSlider = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
-  @media ${device.tablet} {
+  @media ${device.tabletL} {
     width: 260px;
   }
 `;
@@ -39,7 +37,7 @@ export const StyledBoxAngleIcon = styled.div`
 
 export const StyledBoxOutside = styled.div`
   padding: 30px;
-  @media ${device.tablet} {
+  @media ${device.tabletL} {
     padding: 15px;
   }
 `;

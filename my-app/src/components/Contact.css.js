@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import foto from "../zolty_punkt_ubezpieczen.JPG";
+import foto from "../wordKielce.jpeg";
 import { device } from "../breakpoints";
 
 export const StyledContainer = styled.div`
@@ -15,6 +15,7 @@ export const StyledContainer = styled.div`
 
   &::before {
     content: "";
+    background-image: url(${foto});
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -63,8 +64,8 @@ export const StyledBoxRight = styled.div`
   }
 `;
 export const StyledBoxBlurr = styled.div`
-  width: 350px;
-  backdrop-filter: blur(8px);
+  width: 450px;
+  backdrop-filter: blur(6px) brightness(80%) ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,9 +79,12 @@ export const StyledBox = styled.div`
 
 export const StyledBoxContact = styled.div`
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   gap: 20px;
+  @media ${device.tablet} {
+    gap: 5px;
+  }
 `;
 export const StyledInput = styled.input`
   width: 300px;
@@ -112,6 +116,20 @@ export const StyledTitle = styled.h1`
   }
   @media ${device.tablet} {
     font-size: 14px;
+  }
+`;
+
+export const StyledTitleBank = styled.h1`
+  color: ${({ theme }) => theme.fiveColor};
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 3px;
+  .span {
+    color: ${({ theme }) => theme.firstColor};
+  }
+  @media ${device.tablet} {
+    font-size: 8px;
   }
 `;
 
@@ -160,6 +178,7 @@ export const StyledText = styled.p`
     font-size: 10px;
   }
 `;
+
 export const StyledButton = styled.button`
   width: 100%;
   background-color: transparent;

@@ -3,7 +3,7 @@ import { device } from "../breakpoints";
 
 export const StyledContainer = styled.div`
   width: 100%;
-  padding: 50px 30px;
+  padding: 100px 30px;
   background-color: ${({ theme }) => theme.secondColor};
   display: flex;
   justify-content: space-evenly;
@@ -44,9 +44,7 @@ export const StyledBigTitle = styled.h1`
 `;
 
 export const StyledTitle = styled.h1`
-  color: ${({ theme }) => theme.firstColor};
-  text-shadow: 1px 1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(180, 180, 180),
-    -1px -1px 0 rgb(180, 180, 180), 1px -1px 0 rgb(180, 180, 180);
+  color: ${({ theme }) => theme.zeroColor};
   font-size: 36px;
   font-weight: 400;
   text-align: right;
@@ -57,9 +55,7 @@ export const StyledTitle = styled.h1`
 `;
 
 export const StyledText = styled.p`
-  color: ${({ theme }) => theme.firstColor};
-  text-shadow: 1px 1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(180, 180, 180),
-    -1px -1px 0 rgb(180, 180, 180), 1px -1px 0 rgb(180, 180, 180);
+  color: ${({ theme }) => theme.zeroColor};
   @media ${device.tablet} {
     font-size: 10px;
     text-align: center;

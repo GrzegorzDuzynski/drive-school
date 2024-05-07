@@ -4,7 +4,7 @@ import { device } from "../breakpoints";
 
 export const StyledContainer = styled.div`
   width: 100%;
-  padding: 80px 30px;
+  padding: 105px 30px;
   background-color: ${({ theme }) => theme.sixColor};
 `;
 
@@ -47,7 +47,7 @@ export const StyledBoxImg = styled.div`
 `;
 
 export const StyledBigTitle = styled.h1`
-  color: ${({ theme }) => theme.fiveColor};
+  color: ${({ theme }) => theme.zeroColor};
   font-size: 40px;
   font-weight: 400;
   text-align: center;
@@ -59,7 +59,7 @@ export const StyledBigTitle = styled.h1`
 `;
 
 export const StyledTitle = styled.h1`
-  color: ${({ theme }) => theme.fiveColor};
+  color: ${({ theme }) => theme.zeroColor};
   font-size: 20px;
   font-weight: 400;
   text-align: right;
@@ -92,15 +92,15 @@ export const StyledText = styled.p.attrs((props) => ({
 
 export const StyledButton = styled.button`
   background-color: transparent;
-  color: ${({ theme }) => theme.fiveColor};
+  color: ${({ theme }) => theme.zeroColor};
   padding: 8px;
-  border: 2px solid ${({ theme }) => theme.fiveColor};
+ 
   font-weight: 600;
   border-radius: 3px;
   transition: 0.5s ease-in;
 
   &:hover {
-    background-color: ${({ theme }) => theme.fourColor};
+    background-color: ${({ theme }) => theme.sixColor};
     /* color: ${({ theme }) => theme.fiveColor}; */
   }
   @media ${device.tablet} {

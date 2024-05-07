@@ -18,43 +18,61 @@ import {
   StyledText,
   StyledTitle,
 } from "./Offer.css";
+import { offer } from "../data"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
 
 const Offer = () => {
-
+console.log(offer)
   return (
     <StyledContainer id="offer" key="1">
-      <StyledCard>
-      <StyledBoxImg>
-        <img src= "8.jpg" alt="zdjecie 8"/>
-      </StyledBoxImg>
-        <StyledTitle>
-          Kurs na prawo jazdy kat.B 
-        </StyledTitle>
-        <StyledTitle>
-          Cena 2700 zł
-        </StyledTitle>
-        <StyledBox>
-          <a href="tel:+48791577679">
-            <FontAwesomeIcon className="icon" icon={faPhone} />
-          </a>
-          <FontAwesomeIcon
-            // onClick={() => navigate("/contact")}
-            className="icon"
-            icon={faEnvelope}
-          />
-          <FontAwesomeIcon
-            onClick={() => {
-              window.location.href =
-                "https://www.facebook.com/zoltypunkt/?locale=pl_PL";
-            }}
-            className="icon"
-            icon={faFacebook}
-          />
-        </StyledBox>
-      </StyledCard>
+      
+        {offer.map((el)=>(
+          <StyledCard key={el.id}>
+          <StyledBoxImg>
+            <img src={el.img} alt="WSJ photo"/>
+          </StyledBoxImg>
+            <StyledTitle>
+              {el.text}
+            </StyledTitle>
+            <StyledTitle>
+              {el.price} zł
+            </StyledTitle>
+            <StyledBox>
+              <a href="tel:+48502204423">
+                <FontAwesomeIcon className="icon" icon={faPhone} />
+              </a>
+              <FontAwesomeIcon
+                onClick={() => { window.location.href =
+                    "https://www.instagram.com/wsjkielce/";
+                  }}
+                className="icon"
+                icon={faInstagram}
+              />
+              <FontAwesomeIcon
+                onClick={() => {
+                  window.location.href =
+                    "https://www.tiktok.com/@wyzsza.szkola.jazdy?_t=8m7OTH701lm&_r=1";
+                }}
+                className="icon"
+                icon={faTiktok}
+              />
+              <FontAwesomeIcon
+                onClick={() => {
+                  window.location.href =
+                    "https://www.facebook.com/profile.php?id=61556754985728";
+                }}
+                className="icon"
+                icon={faFacebook}
+              />
+            </StyledBox>
+            </StyledCard>
+        ))
+
+
+        }
+
 
       
     </StyledContainer>

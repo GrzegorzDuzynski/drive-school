@@ -10,7 +10,7 @@ import { data } from "../data.js"
 import {
   StyledBox,
   StyledButton,
-  StyledHeaderContainer,
+  StyledHeroContainer,
   StyledHeaderTitle,
   StyledText,
   StyledBoxAngleText,
@@ -77,36 +77,9 @@ const Hero = () => {
         <ul style={{ margin: "20px" }}> {dots} </ul>
       </div>
     ),
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       slidesPerRow: 1,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       slidesPerRow: 1,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 400,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       slidesPerRow: 1,
-    //     },
-    //   },
-    // ],
   };
   return (
-    // <StyledHeaderContainer id="hero">
-    <div style={{position:"relative", margin: "104px 0 70px 0", backgroundColor:"white"}}>
+    <StyledHeroContainer id="hero">
        <Slider {...settings}>
           {data.map((img, id) => (
                   <StyledBoxImg key={img.id}>
@@ -138,8 +111,8 @@ const Hero = () => {
           </StyledText>
         </StyledBoxAngleIcon>
       </StyledLink>
-    {/* </StyledHeaderContainer> */}
-    </div>
+    </StyledHeroContainer>
+
   );
 };
 

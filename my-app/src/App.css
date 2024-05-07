@@ -7,7 +7,16 @@
 
 .icon {
   font-size: 30px;
-  color: black;
+  color: rgba(43,42,41,255);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  &:hover {
+    scale: 1.1;
+  }
+}
+.icon-contact {
+  font-size: 30px;
+  color:white;
   transition: 0.3s ease-in;
   cursor: pointer;
   &:hover {
@@ -40,5 +49,13 @@
 
   .icon-phone {
     font-size: 16px;
+  }
+
+  .icon{
+    font-size: 20px;
+  }
+  .icon-contact{
+    font-size: 13px;
+
   }
 }

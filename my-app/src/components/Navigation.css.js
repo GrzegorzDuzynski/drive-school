@@ -14,7 +14,7 @@ export const StyledContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media ${device.mobileL} {
+  @media ${device.tabletL} {
     padding: 10px 15px;
   }
 `;
@@ -22,13 +22,13 @@ export const StyledContainer = styled.div`
 export const StyledList = styled.ul`
   display: flex;
   gap: 20px;
-  @media ${device.tablet} {
-    background-color: rgba(145, 146, 143, 0.546);
+  @media ${device.tabletL} {
+    background-color: rgba(255,255,255, 0.7);
     padding: 10px;
     flex-direction: column;
     gap: 5px;
     position: absolute;
-    bottom: -140px;
+    bottom: -130px;
     right: 0;
     z-index: 10;
   }
@@ -47,7 +47,7 @@ export const StyledBoxLogo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media ${device.mobileL} {
+  @media ${device.tabletL} {
     width: 110px;
     padding: 10px 0 10px 0;
   }
@@ -57,9 +57,6 @@ export const StyledListItem = styled.li`
   transition: 0.5s ease-in;
   position: relative;
   z-index: 1;
-  /* background-color: rgba(145, 146, 143, 0.546); */
-
-  /* border-bottom: 2px solid orange; */
   &::after {
     content: "";
     width: 0;
@@ -76,7 +73,6 @@ export const StyledListItem = styled.li`
 `;
 
 export const StyledLink = styled(Link)`
-  /* background-color: rgba(145, 146, 143, 0.546); */
   color: ${({ theme }) => theme.fiveColor};
 `;
 
@@ -118,7 +114,7 @@ export const StyledText = styled.p`
   font-size: 14px;
   color: white;
   /* color: ${({ theme }) => theme.zeroColor}; */
-  @media ${device.tablet} {
+  @media ${device.tabletL} {
     font-size: 9px;
   }
 `;

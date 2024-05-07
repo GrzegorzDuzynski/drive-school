@@ -5,25 +5,34 @@ import { device } from "../breakpoints";
 export const StyledAboutContainer = styled.div`
   height: 100vh;
   position: relative;
-  padding: 30px;
+  padding: 100px 30px 50px 30px;
   background-color: ${({ theme }) => theme.secondColor};
 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   @media ${device.tablet} {
     flex-direction: column;
   }
 `;
 
 export const StyledImgBox = styled.div`
-  width: 500px;
-  /* height: 500px; */
+  width: 400px;
+  height: 480px;
   box-shadow: 5px 5px 10px 10px rgb(183, 178, 178);
   @media ${device.tablet} {
     width: 280px;
     height: 230px;
+  }
+`;
+
+export const StyledSignBox = styled.div`
+  width: 200px;
+  justify-self: end;
+  /* height: 500px; */
+  @media ${device.tablet} {
+    width: 140px;
   }
 `;
 
@@ -32,7 +41,7 @@ export const StyledBox = styled.div`
 
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   @media ${device.tablet} {
     gap: 10px;
     width: 280px;

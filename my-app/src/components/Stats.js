@@ -10,7 +10,7 @@ import {
 } from "./Stats.css";
 
 const Stats = () => {
-  const [yearsStart, setYearsStart] = useState(new Date("2015/12/01"));
+  const [yearsStart, setYearsStart] = useState(new Date("2009/12/01"));
   const [years, setYears] = useState(0);
   const [displayYears, setDisplayYears] = useState(0);
   const [scroll, setScroll] = useState(false);
@@ -32,7 +32,7 @@ const Stats = () => {
 
     const contractsOnMarket = () => {
       setConstarcts(
-        Math.round(((today - yearsStart) / (1000 * 60 * 60 * 24)) * 4).toFixed(
+        Math.round(((today - yearsStart) / (1000 * 60 * 60 * 24)) * 0.20).toFixed(
           0
         )
       );
@@ -108,22 +108,22 @@ const Stats = () => {
           <StyledTitle>{displayYears}</StyledTitle>
           <StyledTitle>+</StyledTitle>
         </StyledBoxPlus>
-        <StyledText>Lat na rynku</StyledText>
+        <StyledText>Lat doświadczenia</StyledText>
       </StyledBox>
       <StyledBox>
         <StyledBoxPlus>
           <StyledTitle>{displayConstarcts}</StyledTitle>
           <StyledTitle>+</StyledTitle>
         </StyledBoxPlus>
-        <StyledText>Zawartych polis</StyledText>
+        <StyledText>Przeszkolonych kursantów</StyledText>
       </StyledBox>
-      <StyledBox>
+      {/* <StyledBox>
         <StyledBoxPlus>
           <StyledTitle>{displayClients}</StyledTitle>
           <StyledTitle>+</StyledTitle>
         </StyledBoxPlus>
         <StyledText>Zadowolonych klientów</StyledText>
-      </StyledBox>
+      </StyledBox> */}
     </StyledContainer>
   );
 };

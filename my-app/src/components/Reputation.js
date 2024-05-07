@@ -5,6 +5,8 @@ import Slider from "react-slick";
 // import GLogo from "./../icon-google.png";
 import "./Reputation.css";
 import { opinions } from "../data"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser} from "@fortawesome/free-solid-svg-icons";
 // import { loadGoogleMapsPlacesAPI } from "../utils";
 import {
   StyledBigTitle,
@@ -117,11 +119,7 @@ const Reputation = () => {
               >
                 <StyledBoxDiv>
                   <StyledBoxImg>
-                    <img
-                      src={opinion.profile_photo_url}
-                      alt={opinion.author}
-                      referrerPolicy="no-referrer"
-                    />
+                  <FontAwesomeIcon icon={faUser} />
                   </StyledBoxImg>
                   <StyledTitle>{opinion.author}</StyledTitle>
                 </StyledBoxDiv>
