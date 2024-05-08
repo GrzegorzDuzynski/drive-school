@@ -9,18 +9,13 @@ import { data } from "../data.js"
 
 import {
   StyledBox,
-  StyledButton,
   StyledHeroContainer,
   StyledHeaderTitle,
   StyledText,
   StyledBoxAngleText,
   StyledBoxAngleIcon,
   StyledLink,
-  StyledBoxLogo,
   StyledBoxLogoAndTitle,
-  StyledBoxSlider,
-  StyledBoxDiv,
-  StyledBoxOutside,
   StyledBoxImg,
 } from "./Hero.css";
 

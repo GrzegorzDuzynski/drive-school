@@ -10,7 +10,7 @@ import {
 } from "./Stats.css";
 
 const Stats = () => {
-  const [yearsStart, setYearsStart] = useState(new Date("2009/12/01"));
+  const [yearsStart, setYearsStart] = useState(new Date("2010/09/01"));
   const [years, setYears] = useState(0);
   const [displayYears, setDisplayYears] = useState(0);
   const [scroll, setScroll] = useState(false);

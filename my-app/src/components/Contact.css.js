@@ -55,12 +55,14 @@ export const StyledBoxMiddle = styled.div``;
 export const StyledBoxRight = styled.div`
   width: 100%;
   height: 300px;
-  padding: 12px;
+  padding: 50px 12px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
   @media ${device.tablet} {
+    padding: 12px;
     height: 150px;
+    gap:15px;
   }
 `;
 export const StyledBoxBlurr = styled.div`
@@ -81,8 +83,9 @@ export const StyledBoxContact = styled.div`
   display: flex;
   // justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 8px;
   @media ${device.tablet} {
+    flex-direction:column;
     gap: 5px;
   }
 `;

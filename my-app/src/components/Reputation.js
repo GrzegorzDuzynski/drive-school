@@ -73,11 +73,6 @@ const Reputation = () => {
     swipeToSlide: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    // afterChange: function (index) {
-    //   console.log(
-    //     `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
-    //   );
-    // },
     responsive: [
       {
         breakpoint: 1024,
@@ -114,12 +109,13 @@ const Reputation = () => {
             <StyledBoxOutside key={id}>
               <StyledBox
                 style={{
-                  height: expandedOpinions[id] ? "auto" : "230px",
+                  // height: expandedOpinions[id] ? "auto" : "230px",
+                  height: "230px",
                 }}
               >
                 <StyledBoxDiv>
                   <StyledBoxImg>
-                  <FontAwesomeIcon icon={faUser} />
+                    <img src={opinion.img}/>
                   </StyledBoxImg>
                   <StyledTitle>{opinion.author}</StyledTitle>
                 </StyledBoxDiv>
@@ -129,9 +125,9 @@ const Reputation = () => {
                 >
                   {opinion.text}
                 </StyledText>
-                <StyledButton onClick={() => toggleExpanded(id)}>
+                {/* <StyledButton onClick={() => toggleExpanded(id)}>
                   {showFullText[id] ? "Zwiń" : "Rozwiń"}
-                </StyledButton>
+                </StyledButton> */}
               </StyledBox>
             </StyledBoxOutside>
           ))}

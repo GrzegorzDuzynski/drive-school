@@ -1,30 +1,27 @@
 import React, { useEffect, useState } from "react";
 import {
   StyledBox,
-  StyledBoxBottom,
-  StyledBoxCheckbox,
   StyledBoxImg,
-  StyledBoxImgPopup,
-  StyledBoxPopup,
-  StyledBoxText,
-  StyledBoxTextLi,
-  StyledBoxTextPopup,
-  StyledBoxTop,
-  StyledButton,
-  StyledButtonContact,
   StyledCard,
-  StyledCheckbox,
   StyledContainer,
-  StyledText,
   StyledTitle,
 } from "./Offer.css";
 import { offer } from "../data"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
+import axios from "axios";
+
 
 const Offer = () => {
-console.log(offer)
+  // axios.get(
+  //   '/wp-json/captaincore/v1/customers', {
+  //     headers: {'X-WP-Nonce':wpApiSettings.nonce}
+  //   })
+  //   .then(response => {
+  //     this.customers = response.data;
+  //   });
+
   return (
     <StyledContainer id="offer" key="1">
       
@@ -69,12 +66,7 @@ console.log(offer)
             </StyledBox>
             </StyledCard>
         ))
-
-
         }
-
-
-      
     </StyledContainer>
   );
 };

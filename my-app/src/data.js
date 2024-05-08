@@ -28,11 +28,7 @@ export const dataOld = [
   ];
 
   export const data = [
-    // {
-    //   id: 0,
-    //   text: "zdjecie 0",
-    //   img: "0.jpg",
-    // },
+
     {
       id: 2,
       text: "zdjecie 2",
@@ -43,11 +39,7 @@ export const dataOld = [
       text: "zdjecie 3",
       img: "3.jpg",
     },
-    // {
-    //   id: 4,
-    //   text: "zdjecie 4",
-    //   img: "4.jpg",
-    // },
+
     {
       id: 5,
       text: "zdjecie 5",
@@ -58,74 +50,81 @@ export const dataOld = [
       text: "zdjecie 6",
       img: "6.jpg",
     },
-    // {
-    //   id: 7,
-    //   text: "zdjecie 7",
-    //   img: "7.png",
-    // },
 
   ];
 
   export const opinions = [
     {
       id: 1,
-      text: "Odpowiednia osoba na odpowednim mijescu. Świetny instruktor, przekazał ogrmoną dawkę wiedzy teoretycznej jak i praktycznej.Na jazdach towarzyszyła zawsze miła i luźna otmosfera. Polecam!",
+      text: "Odpowiednia osoba na odpowiednim miejscu. Świetny instruktor, przekazał ogromną dawkę wiedzy teoretycznej jak i praktycznej.Na jazdach towarzyszyła zawsze miła i luźna otmosfera. Polecam!",
       author: "andziusia",
+      img:"andziusia.png",
     },
     {
       id: 2,
       text: "Miałam przyjemność uczyć się z Piotrkiem już 5 lat temu i uważam, że jest ekstra instruktorem jazdy, polecam każdemu! ",
       author: "Izabela",
+      img:"Izabela.png",
     },
     {
       id: 3,
       text: "Przygotowanie przez instruktora Pana Piotrka B do egzaminu wybitne. Zdecydowanie polecam",
       author: "Konrad",
+      img:"Konrad.png",
     },
     {
       id: 4,
       text: "Wszystko super! Świetna atmosfera i wspaniały instruktor - Piotr Biernat, z którym nauka jazdy to czysta przyjemność. Bardzo polecam.",
       author: "Natalia ",
+      img:"Natalia.png",
     },
     {
       id: 5,
-      text: "Świetny instruktor Piotr, wszystko poszło sprawnie tak sami jak egzamin.",
+      text: "Świetny instruktor Piotr, wszystko poszło sprawnie tak samo jak egzamin.",
       author: "Patrycja",
+      img:"Patrycja.png",
     },
     {
       id: 6,
-      text: "Piotrek jest najlepszym instruktorem w mieście. Spokój, cierpliwość, zaangażowanie, ogrmona ilość wiedzy i doświadczenie to własnie cechuje Piotrka.",
+      text: "Piotrek jest najlepszym instruktorem w mieście. Spokój, cierpliwość, zaangażowanie, ogromna ilość wiedzy i doświadczenie to własnie cechuje Piotrka.",
       author: "Wiktoria",
+      img:"Wiktoria.png",
     },
     {
       id: 7,
       text: "Serdecznie polecam!!! Jeździłam z panem Piotrem, gdzie zawsze była luźna i przyjemna atmosfera.",
       author: "Kinga",
+      img:"Kinga.png",
     },
     {
       id: 8,
       text: "Zdany egzamin za pierwszym razem. Najlepszy instruktor Piotr B. Nauczy, wytłumaczy na spokojnie i bez stresu",
       author: "Szczepan",
+      img:"Szczepan.png",
     },
     {
       id: 9,
       text: "Polecam z całego serca. Zdane za 1 razem ucząc sie u instruktora Piotrka",
       author: "Piotrek",
+      img:"Piotrek.png",
     },
     {
       id: 10,
-      text: "Jeździłam z instruktorem Piotrkiem - pełen profesjonalizm, wielkie doświadczenie i cierpliwość.Kada godzina jazdy pozwalała mi nauczyć się czegoś nowego",
+      text: "Jeździłam z instruktorem Piotrkiem - pełen profesjonalizm, wielkie doświadczenie i cierpliwość. Każda godzina jazdy pozwalała mi nauczyć się czegoś nowego",
       author: "Magdalena",
+      img:"Magdalena.png",
     },
     {
       id: 11,
-      text: "Świetne przygotowanie do egzaminu, bezproblemowa komunikacja z instrukotrem Piotrkiem - ogromne doświadczenie z jego strony. Polecam :)",
+      text: "Świetne przygotowanie do egzaminu, bezproblemowa komunikacja z instruktorem Piotrkiem - ogromne doświadczenie z jego strony. Polecam :)",
       author: "Bartosz",
+      img:"Bartosz.png",
     },
     {
       id: 12,
-      text: "Bardzo polecam instruktora Piotrka. Zdane za 1-szym",
+      text: "Bardzo polecam instruktora Piotrka. Zdane za 1-szym ",
       author: "Maciej",
+      img:"Maciej.png",
     },
     
     

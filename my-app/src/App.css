@@ -15,7 +15,7 @@
   }
 }
 .icon-contact {
-  font-size: 30px;
+  font-size: 20px;
   color:white;
   transition: 0.3s ease-in;
   cursor: pointer;
@@ -56,6 +56,7 @@
   }
   .icon-contact{
     font-size: 13px;
+    /* display: none; */
 
   }
 }
