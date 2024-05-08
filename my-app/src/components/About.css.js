@@ -32,7 +32,8 @@ export const StyledSignBox = styled.div`
   padding-left:20px;
   /* height: 500px; */
   @media ${device.tablet} {
-    width: 170px;
+    
+    width: 200px;
   }
 `;
 
