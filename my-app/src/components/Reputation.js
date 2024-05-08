@@ -68,7 +68,7 @@ const Reputation = () => {
     slidesPerRow: 3,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     adaptiveHeight: true,
     swipeToSlide: true,
     nextArrow: <SampleNextArrow />,
