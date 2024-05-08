@@ -28,7 +28,7 @@ export const StyledImgBox = styled.div`
 `;
 
 export const StyledSignBox = styled.div`
-  width: 240px;
+  width: 280px;
   padding-left:20px;
   /* height: 500px; */
   @media ${device.tablet} {
