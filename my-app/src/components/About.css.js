@@ -28,8 +28,8 @@ export const StyledImgBox = styled.div`
 `;
 
 export const StyledSignBox = styled.div`
-  width: 200px;
-  justify-self: end;
+  width: 240px;
+  padding-left:20px;
   /* height: 500px; */
   @media ${device.tablet} {
     width: 140px;
