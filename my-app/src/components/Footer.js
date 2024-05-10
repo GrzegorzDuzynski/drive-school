@@ -3,11 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faTiktok  } from "@fortawesome/free-brands-svg-icons";
 
-import { StyledContainer, StyledBox } from "./Footer.css";
+import { StyledContainer, StyledBox, StyledGDDEVBox, StyledGDDEVTitle } from "./Footer.css";
 
 const Footer = () => {
   return (
     <StyledContainer>
+        <StyledGDDEVBox  
+         onClick={() => { window.location.href =
+                    "https://gddev.pl";
+                  }}>
+            <StyledGDDEVTitle>
+              GD <span style={{ color: "rgb(186, 178, 178)"}}>Developer</span>
+            </StyledGDDEVTitle>
+        </StyledGDDEVBox>
        <StyledBox>
               <a href="tel:+48502204423">
                 <FontAwesomeIcon className="icon" style={{color:"white"}} icon={faPhone} />

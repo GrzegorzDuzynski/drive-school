@@ -6,26 +6,34 @@ import {
   StyledContainer,
   StyledTitle,
 } from "./Offer.css";
-import { offer } from "../data"
+// import { offer } from "../data"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import axios from "axios";
 
-
 const Offer = () => {
-  // axios.get(
-  //   '/wp-json/captaincore/v1/customers', {
-  //     headers: {'X-WP-Nonce':wpApiSettings.nonce}
-  //   })
-  //   .then(response => {
-  //     this.customers = response.data;
-  //   });
+
+  const [offer, setOffer ] = useState()
+
+  useEffect(() => {
+    axios.get('https://wsjkielce.pl/wp-headless/wp-json/wp/v2/prices')
+      .then(function (response) {
+        setOffer(response.data)
+        console.log(response);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .finally(function () {
+        // always executed
+      });
+    }, []);
 
   return (
     <StyledContainer id="offer" key="1">
-      
-        {offer.map((el)=>(
+        {offer?.length > 0 && offer.map((el)=>(
           <StyledCard key={el.id}>
           <StyledBoxImg>
             <img src={el.img} alt="WSJ photo"/>

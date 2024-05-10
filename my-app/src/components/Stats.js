@@ -91,7 +91,6 @@ const Stats = () => {
 
   const checkScroll = () => {
     let counterElement = document.getElementById("stats");
-    console.log(counterElement)
     let position = counterElement.getBoundingClientRect().top;
 
     if (position < window.innerHeight) {
