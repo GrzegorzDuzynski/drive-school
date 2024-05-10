@@ -17,7 +17,7 @@ const Offer = () => {
   const [offer, setOffer ] = useState()
 
   useEffect(() => {
-    axios.get('https://wsjkielce.pl/wp-headless/wp-json/wp/v2/prices')
+    axios.get('https://xdqkrohrpz.cfolks.pl/wp-headless/wp-json/wp/v2/prices')
       .then(function (response) {
         setOffer(response.data)
         console.log(response);
