@@ -17,7 +17,7 @@ const Offer = () => {
   const [offer, setOffer ] = useState()
 
   useEffect(() => {
-    axios.get('https://xdqkrohrpz.cfolks.pl/wp-headless/wp-json/wp/v2/prices')
+    axios.get('https://wsjkielce.pl/wp-headless/wp-json/wp/v2/prices')
       .then(function (response) {
         setOffer(response.data)
         console.log(response);
@@ -31,6 +31,9 @@ const Offer = () => {
       });
     }, []);
 
+    // na WP zaisntalowałem SQL Buddy oraz WP Data Access oraz code snippets
+
+
   return (
     <StyledContainer id="offer" key="1">
         {offer?.length > 0 && offer.map((el)=>(
@@ -42,7 +45,7 @@ const Offer = () => {
               {el.text}
             </StyledTitle>
             <StyledTitle>
-              {el.price} zł
+              {el.Price} zł
             </StyledTitle>
             <StyledBox>
               <a href="tel:+48502204423">

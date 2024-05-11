@@ -70,6 +70,15 @@ export const StyledBoxImg = styled.div`
   width: 600px;
   border: 2px solid #ddd;
   overflow: hidden;
+  animation: fadeIn 1s forwards linear;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
 `;
 
 export const StyledBoxAngleText = styled.div`
