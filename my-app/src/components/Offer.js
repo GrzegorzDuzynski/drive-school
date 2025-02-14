@@ -20,7 +20,6 @@ const Offer = () => {
     axios.get('https://wsjkielce.pl/wp-headless/wp-json/wp/v2/prices')
       .then(function (response) {
         setOffer(response.data)
-        console.log(response);
       })
       .catch(function (error) {
         // handle error
