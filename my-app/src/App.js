@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Reputation from "./components/Reputation";
 import Stats from "./components/Stats";
 import Offer from "./components/Offer";
+import Awards from "./components/Awards";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       </header>
       <main>
         <Hero />
+        <Awards />
         <Offer />
         {/* <Registration /> */}
         <About />

@@ -6,4 +6,5 @@ export const theme = {
   fourColor: "rgba(219, 229, 20, 0.776)",
   fiveColor: "black",
   sixColor: "rgba(218, 229, 229, 1)",
+  sevethColor: "rgba(218, 229, 229, 0.5)",
 };

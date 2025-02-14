@@ -152,4 +152,12 @@ export const dataOld = [
 
   ];
   
+  export const awards = [
+    {
+      id: 1,
+      text: "Pierwsze miejsce w rankingu szkół jazdy w Kielcach",
+      img: "wynikZdawalnosci2024.jpg",
+    },
+
+  ];
   
