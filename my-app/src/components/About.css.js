@@ -4,6 +4,7 @@ import { device } from "../breakpoints";
 
 export const StyledAboutContainer = styled.div`
   height: 100vh;
+  min-height: 600px;
   position: relative;
   padding: 100px 30px 50px 30px;
   background-color: ${({ theme }) => theme.secondColor};
