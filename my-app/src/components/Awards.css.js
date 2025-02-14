@@ -12,6 +12,7 @@ export const StyledContainer = styled.div`
   gap: 20px;
   grid-auto-rows: auto;
   @media ${device.tablet} {
+    padding: 20px 20px 20px 20px;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 10px;
   }
